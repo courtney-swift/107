@@ -1,14 +1,16 @@
 
-import './App.css'
-import "./components/Navbar"
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import './App.css';
+import "./components/Navbar";
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import QuantityPicker from './components/QuantityPicker';
+import Catalog from './Pages/Catalog';
 function App() {
 
   return (
     <div>
-    <h1>Hello From React!!</h1>
     <Navbar/>
+    <Catalog/>
     <Footer/>
     </div>
   )
