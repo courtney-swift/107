@@ -2,7 +2,10 @@ import "./Product.css";
 import QuantityPicker from "./QuantityPicker";
 
 function Product(props){
-
+    function handleQuantityChange(qty)
+    {
+        console.log(qty);
+    }
     return(
         <div className="product">
             <img src={"/images/"+props.data.image} alt="product"></img>
@@ -11,7 +14,7 @@ function Product(props){
                 <label>{props.data.price.toFixed(2)}</label>
                 <label>Total</label>
             </div>  
-            <QuantityPicker></QuantityPicker>
+            <QuantityPicker onChange={handleQuantityChange}></QuantityPicker>
         </div>
     )
 }
